@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A person sleeping peacefully under a starry night sky with a sleep-cycle wave below">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a2e"/>
+      <stop offset="45%" stop-color="#16153f"/>
+      <stop offset="100%" stop-color="#2a1f54"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff4d6" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#fff4d6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#fff4d6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="38%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#f3e2b3"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241a47"/>
+      <stop offset="100%" stop-color="#180f33"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c6df2"/>
+      <stop offset="50%" stop-color="#b39ddb"/>
+      <stop offset="100%" stop-color="#f6c177"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="1200" height="800" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="90" r="1.6" opacity="0.9"/>
+    <circle cx="200" cy="160" r="1.1" opacity="0.6"/>
+    <circle cx="320" cy="70" r="2" opacity="0.95"/>
+    <circle cx="430" cy="140" r="1.2" opacity="0.7"/>
+    <circle cx="540" cy="60" r="1.5" opacity="0.85"/>
+    <circle cx="700" cy="120" r="1.1" opacity="0.6"/>
+    <circle cx="820" cy="70" r="1.8" opacity="0.9"/>
+    <circle cx="980" cy="150" r="1.3" opacity="0.7"/>
+    <circle cx="1080" cy="90" r="1.6" opacity="0.85"/>
+    <circle cx="1140" cy="200" r="1.1" opacity="0.6"/>
+    <circle cx="60" cy="260" r="1.2" opacity="0.7"/>
+    <circle cx="260" cy="240" r="1" opacity="0.5"/>
+    <circle cx="610" cy="200" r="1.3" opacity="0.7"/>
+    <circle cx="900" cy="240" r="1.1" opacity="0.6"/>
+    <circle cx="1030" cy="300" r="1" opacity="0.5"/>
+  </g>
+  <!-- Twinkling stars -->
+  <g fill="#fff4d6">
+    <circle cx="380" cy="190" r="1.8" opacity="0.9">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="170" r="1.6" opacity="0.7">
+      <animate attributeName="opacity" values="1;0.2;1" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="200" r="1.5" opacity="0.8">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="930" cy="180" r="180" fill="url(#moonGlow)"/>
+  <circle cx="930" cy="180" r="78" fill="url(#moon)"/>
+  <circle cx="905" cy="150" r="13" fill="#e9d49b" opacity="0.55"/>
+  <circle cx="955" cy="200" r="9" fill="#e9d49b" opacity="0.5"/>
+  <circle cx="945" cy="145" r="6" fill="#e9d49b" opacity="0.45"/>
+
+  <!-- Floating Z's rising from the sleeper -->
+  <g fill="#fff4d6" font-family="Georgia, serif" font-weight="700">
+    <text x="452" y="560" font-size="34" opacity="0.85">Z
+      <animate attributeName="y" values="560;542;560" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="492" y="528" font-size="25" opacity="0.7">z
+      <animate attributeName="y" values="528;512;528" dur="4.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="524" y="502" font-size="18" opacity="0.55">z
+      <animate attributeName="y" values="502;488;502" dur="5.2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Rolling hills -->
+  <path d="M0 560 Q300 470 620 540 T1200 520 L1200 800 L0 800 Z" fill="url(#hill)"/>
+  <path d="M0 640 Q360 560 720 620 T1200 600 L1200 800 L0 800 Z" fill="#120b29"/>
+
+  <!-- Bed + sleeping figure -->
+  <g transform="translate(330,540)">
+    <!-- mattress -->
+    <rect x="0" y="60" width="360" height="70" rx="18" fill="#3a2d63"/>
+    <!-- pillow -->
+    <rect x="18" y="44" width="92" height="44" rx="16" fill="#cdbff0"/>
+    <!-- blanket -->
+    <path d="M70 96 Q200 40 340 96 L340 132 L70 132 Z" fill="#7c6df2"/>
+    <path d="M70 96 Q200 40 340 96" fill="none" stroke="#9b8af5" stroke-width="3" opacity="0.6"/>
+    <!-- head -->
+    <circle cx="74" cy="66" r="22" fill="#f2d3b8"/>
+    <!-- closed eye -->
+    <path d="M64 64 q6 6 12 0" fill="none" stroke="#3a2d63" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- legs (feet bump) -->
+    <rect x="0" y="56" width="14" height="74" rx="7" fill="#2e2350"/>
+  </g>
+
+  <!-- Sleep-cycle wave (the "data" tie-in) -->
+  <g opacity="0.9">
+    <path d="M0 740 C 80 700, 130 700, 180 730 S 280 770, 340 735 S 460 690, 540 720
+             S 640 765, 720 730 S 840 695, 920 725 S 1040 765, 1120 730 S 1180 715, 1200 720"
+          fill="none" stroke="url(#wave)" stroke-width="4" stroke-linecap="round" filter="url(#soft)"/>
+  </g>
+
+  <!-- Title text on image -->
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#fff4d6" text-anchor="middle">
+    <text x="600" y="120" font-size="20" letter-spacing="6" opacity="0.85">THE SCIENCE OF REST</text>
+  </g>
+</svg>
